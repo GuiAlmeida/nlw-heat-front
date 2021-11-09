@@ -7,7 +7,6 @@ import { SendMessageForm } from './components/SendMessageForm';
 
 export function App() {
   const { user } = useContext(AuthContext);
-  console.log(user);
   return (
     <main className={`${styles.contentWrapper} ${!!user ? styles.contentSigned : " "}`}>
       <MessageList />
